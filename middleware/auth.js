@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const auth = (...param) => (req, res, next) => {
     //判断什么时候需要校验token
-    if (req.path === "/users/login" || req.path === "/users/regist" || req.path === "/users/deleteUsers" || req.path === "/users/getAllUsers" || req.path === '/hometown/getHometownInfo') {
+    if (req.path === "/users/login" || req.path === "/users/regist" || req.path === "/users/deleteUsers" || req.path === "/users/getAllUsers" || req.path === '/resume/getResumeInfo') {
         //登录注册不需要要校验
         next();
     }

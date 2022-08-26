@@ -1,7 +1,7 @@
-const { getHometownInfo } = require("../model/hometownsModel")
+const { getHometownInfo } = require("../model/hometownModel")
 //获取所有信息
 const hometownInfoCtr = async (req, res) => {
-    let result = await getHometownInfo();
+    let result = await getHometownInfo()
     res.send({
         state: true,
         status: 200,
